@@ -11,6 +11,9 @@ SilverStripe\Core\Injector\Injector:
       configuration:
         region: '`AWS_REGION`'
         version: latest
+        credentials:
+          key: '`AWS_ACCESS_KEY_ID`'
+          secret: '`AWS_SECRET_ACCESS_KEY`'
   League\Flysystem\Adapter\Local:
     class: League\Flysystem\Adapter\Local
     constructor:
