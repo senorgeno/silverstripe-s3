@@ -17,7 +17,7 @@ class PublicAdapter extends AwsS3Adapter implements SilverstripePublicAdapter
         if (!$prefix) {
             $prefix = 'public';
         }
-        parent::__construct($client, $bucket, $prefix, $options);
+        parent::__construct($client, $bucket, $prefix, $options, false);
     }
 
     /**

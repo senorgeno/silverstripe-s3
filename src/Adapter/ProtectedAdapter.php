@@ -27,7 +27,7 @@ class ProtectedAdapter extends AwsS3Adapter implements SilverstripeProtectedAdap
         if (!$prefix) {
             $prefix = 'protected';
         }
-        parent::__construct($client, $bucket, $prefix, $options);
+        parent::__construct($client, $bucket, $prefix, $options, false);
     }
 
     /**
